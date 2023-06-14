@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}
+    início
+{% endblock %}
+{% block content %} 
+
+    {% for i in curso %}
+        <h2><a href="{% url 'curso/i.id' %}">{{ i.nome }}</a></h2>
+    {% endfor %}
+
+{% endblock %}
